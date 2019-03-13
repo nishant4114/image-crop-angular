@@ -2,7 +2,22 @@ import { Component, ViewChild } from '@angular/core';
 import { LyTheme2, ThemeVariables } from '@alyle/ui';
 import { LyResizingCroppingImages, ImgCropperConfig, ImgCropperEvent } from '@alyle/ui/resizing-cropping-images';
 
-import { styles } from './app.styles';
+// import { styles } from './app.styles';
+// uncomment the upper line and comment the below style variable if you want the css for scale slider
+
+const styles = {
+  actions: {
+    display: 'flex'
+  },
+  cropping: {
+    maxWidth: '400px',
+    height: '300px'
+  },
+  flex: {
+    flex: 1
+  }
+};
+
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
